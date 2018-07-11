@@ -4,7 +4,11 @@
   "description": "IFE Web Server to serve data for the pages with datastore as MongoDB",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server/server.js",
+    "test": ""
+  },
+  "engines":{
+    "node": "8.9.2"
   },
   "author": "Sabarigirivasan",
   "license": "ISC",

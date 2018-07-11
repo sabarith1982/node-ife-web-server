@@ -6,7 +6,7 @@ var bodyParser = require('body-parser');
 
 var {Menu} = require('./models/menu');
 var {MenuItem} = require('./models/menuitem');
-
+const port = process.env.PORT || 3000;
 var app = new express();
 
 app.use(bodyParser.json());
@@ -67,7 +67,7 @@ app.post('/MenuItem',(req, res) => {
   });
 });
 
-app.listen(3000, ()=> {
+app.listen(port, ()=> {
   console.log("App started")
 });
 
