@@ -36,6 +36,8 @@ var MenuItemSchema = new mongoose.Schema({
   }
 });
 
+MenuItemSchema.index({menuitemID:1, menuID: -1},{unique: true});
+
 var MenuItem = mongoose.model('MenuItem', MenuItemSchema);
 
 
